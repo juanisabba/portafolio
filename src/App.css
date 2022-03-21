@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.app {
+  max-width: 100vw;
+  max-height: 100vh;
+  /* overflow: hidden; */
+}
+.alice-carousel__next-btn {
+  position: absolute;
+  font-size: 100px;
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  top: calc(57vh - 40px);
+  height: 50px;
+  padding: 8px 10px;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1002;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px #000;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .arrow {
+    display: none;
+  }
+}

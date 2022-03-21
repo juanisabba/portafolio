@@ -1,0 +1,99 @@
+.About-me{
+    display: flex;
+    height: 100vh;
+    padding-top: 15vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-me-grid{
+    display: flex;
+    width: calc(100vw - 220px);
+    margin: auto;
+    margin-top: 5vh;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: rgba(26, 24, 24, 0.5);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    padding-bottom: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.information{
+    font-size: 20px;
+    padding: 0 30px 30px 0;
+}
+
+.profile-pic{
+    flex: 1;
+    width: 40%;
+    align-self: center;
+    margin: auto;
+}
+
+.skills{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.skills-list{
+    display: flex;
+}
+
+.skills ul{
+    padding: 10px 30px 30px 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .information{
+        font-size: 17px;
+    }
+    
+    .skills{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .about-me-grid{
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+    }
+
+    .About-me .profile-pic{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .About-me .profile-pic{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .About-me{
+        padding-bottom: 0;
+    }
+
+    .about-me-grid{
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        background: linear-gradient(transparent, #212121 50%);
+        padding: 10px;
+    }
+
+    .information{
+        font-size: 14px;
+    }
+
+    .skills{
+        font-size: 14px;
+    }
+
+    
+
+}

@@ -1,0 +1,155 @@
+.Home{
+    display: flex;
+    height: 100vh;
+    padding-top: 15vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    flex: 0.9;
+    padding: 0 50px;
+    color: #fff;
+    z-index: 1;
+}
+
+.name h1{
+    font-size: 50px;
+    text-shadow: 0 0  30px #000;
+}
+
+.name p{
+    font-size: 20px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.name a{
+    max-width: 170px;
+}
+
+.name button{
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgb(182, 243, 245);
+    color: rgb(182, 243, 245);
+    transition: all .4s;
+    backdrop-filter: blur(5px);
+}
+
+.name button:hover{
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.Home .developer{
+    width: 27vw;
+    pointer-events: none;
+}
+
+.Home .flowers{
+    position: absolute;
+    transform: rotate(180deg);
+    width: 23vw;
+    left: -40px;
+    top: -60px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 900px){
+    .name h1{
+        font-size: 40px;
+    }
+
+    .name p{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .name a{
+        max-width: 130px;
+    }    
+
+    .name button{
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+    
+    .Home .flowers{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .Home{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Home .name{
+        padding: 50px;
+    }
+
+    .Home .developer{
+        padding-top: 50px;
+        width: 35vw;
+    }
+
+    .Home .flowers{
+        width: 40vw;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+    .name h1{
+        font-size: 30px;
+    }
+
+    .name p{
+        font-size: 15px;
+    }
+
+    .name button{
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .Home .developer{
+        width: 40vw;
+    }
+
+    .name a{
+        max-width: 120px;
+    }    
+
+    .name button{
+        width: 120px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .name h1{
+        font-size: 25px;
+    }
+    
+    .Home .developer{
+        width: 55vw;
+    }
+
+    .Home .flowers{
+        width: 60vw;
+    }
+}

@@ -45,16 +45,17 @@ export default function Projects({ checked, showProject, setShowProject }) {
           <span></span>
           <div className="content">
             <h2>02</h2>
-            <h3>BINANCE</h3>
-            <img src={binance} alt="Binance" />
+            <h3>NETFLIX CLONE</h3>
+            <img src={juaniflix} alt="Juaniflix" />
             <p>
               {!checked
-                ? `This is a Binance clone where you can search for every crypto and all its stats. 
-                Created with React js and Material UI.`
-                : `Un clon de Binance, donde podes buscar todas las principales criptomonedas y todas 
-                sus estadísticas. Creado con React js y Material UI.`}
+                ? ` Juaniflix it's a Netflix clone created with React js, Omdb Api,
+                Swiper and Material UI.`
+                : `Juaniflix es un clon de Netflix sumamente completo. Creado con 
+                  React, Omdb Api, Swiper y Material UI.
+                `}
             </p>
-            <a onClick={() => setShowProject(4)} href="/#binance">
+            <a onClick={() => setShowProject(2)} href="/#juaniflix">
               {!checked ? "SEE MORE" : "MÁS INFO"}
             </a>
           </div>
@@ -67,17 +68,16 @@ export default function Projects({ checked, showProject, setShowProject }) {
           <span></span>
           <div className="content">
             <h2>03</h2>
-            <h3>NETFLIX CLONE</h3>
-            <img src={juaniflix} alt="Juaniflix" />
+            <h3>BINANCE</h3>
+            <img src={binance} alt="Binance" />
             <p>
               {!checked
-                ? ` Juaniflix it's a Netflix clone created with React js, Omdb Api
-                and Material UI.`
-                : `Juaniflix es un clon de Netflix sumamente completo. Creado con 
-                  React,TMDB Api, Swiper y Material UI.
-                `}
+                ? `This is a Binance clone where you can search for every crypto and all its stats. 
+                Created with React js and Material UI.`
+                : `Un clon de Binance, donde podes buscar todas las principales criptomonedas y todas 
+                sus estadísticas. Creado con React js y Material UI.`}
             </p>
-            <a onClick={() => setShowProject(2)} href="/#juaniflix">
+            <a onClick={() => setShowProject(4)} href="/#binance">
               {!checked ? "SEE MORE" : "MÁS INFO"}
             </a>
           </div>

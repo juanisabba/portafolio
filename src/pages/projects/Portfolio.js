@@ -21,7 +21,7 @@ export default function Portfolio({checked}) {
           </h3>
           <div className="buttons-project">
             <a
-              href="https://github.com/juanisabba/my-app"
+              href="https://github.com/juanisabba/portafolio"
               target="_blank"
               rel="noreferrer"
             >

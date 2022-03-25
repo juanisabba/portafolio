@@ -34,7 +34,7 @@ export default function Juaniflix({checked}) {
               />
             </a>
             <a
-              href="https://juanisabba.github.io/binance/"
+              href="https://crypto-binance.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >

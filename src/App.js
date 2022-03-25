@@ -9,23 +9,22 @@ import Contact from "./pages/Contact";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import Portfolio from "./pages/projects/Portfolio";
 import { Routes, Route } from "react-router-dom";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
   const [checked, setChecked] = useState(() => {
     const saved = localStorage.getItem("isChecked");
     const initialValue = JSON.parse(saved);
     return initialValue || true;
   });
-  const [showProject, setShowProject] = useState(0)
-  const navigate = useNavigate()
-  
+  const [showProject, setShowProject] = useState(0);
+  const navigate = useNavigate();
+
   useEffect(() => {
-    navigate('/')
-    setIsLoading(false)
+    navigate("/");
+    setIsLoading(false);
   }, [isLoading, navigate]);
 
   useEffect(() => {
@@ -61,6 +60,7 @@ function App() {
             path="/"
             element={
               <Swiper
+                slidesPerView={1}
                 className="swiper"
                 draggable={false}
                 allowTouchMove={false}
@@ -72,15 +72,18 @@ function App() {
                   <AboutMe checked={checked} setShowProject={setShowProject} />
                 </SwiperSlide>
                 <SwiperSlide id="projects">
-                  <Projects showProject={showProject} setShowProject={setShowProject} checked={checked} />
+                  <Projects
+                    showProject={showProject}
+                    setShowProject={setShowProject}
+                    checked={checked}
+                  />
                 </SwiperSlide>
                 <SwiperSlide id="contact">
-                  <Contact checked={checked} setShowProject={setShowProject}/>
+                  <Contact checked={checked} setShowProject={setShowProject} />
                 </SwiperSlide>
               </Swiper>
             }
           />
-          <Route exact path="/portfolio" element={<Portfolio />} />
         </Routes>
       </div>
     </>

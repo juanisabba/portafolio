@@ -1,99 +1,128 @@
-.About-me{
-    display: flex;
-    height: 100vh;
-    padding-top: 15vh;
-    align-items: center;
-    overflow: hidden;
+::-webkit-scrollbar {
+  width: 10px;
+  transition: all 0.3s;
 }
 
-.about-me-grid{
-    display: flex;
-    width: calc(100vw - 220px);
-    margin: auto;
-    margin-top: 5vh;
-    color: #fff;
-    padding: 20px;
-    padding-bottom: 0;
-    background-color: rgba(26, 24, 24, 0.5);
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
-    padding-bottom: 20px;
-    backdrop-filter: blur(5px);
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
-.information{
-    font-size: 20px;
-    padding: 0 30px 30px 0;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 45, 45);
+  border-radius: 10px;
 }
 
-.profile-pic{
-    flex: 1;
-    width: 40%;
-    align-self: center;
-    margin: auto;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(43, 39, 39);
 }
 
-.skills{
-    font-size: 20px;
-    margin-bottom: 0;
+.About-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 20vh;
+  overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
-.skills-list{
-    display: flex;
+.about-me-grid {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+  color: #fff;
+  padding: 20px;
+  overflow-y: scroll;
+  background-color: rgba(26, 24, 24, 0.5);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  padding-bottom: 20px;
+  backdrop-filter: blur(5px);
 }
 
-.skills ul{
-    padding: 10px 30px 30px 20px;
+.information {
+  font-size: 20px;
+  padding: 0 30px 30px 0;
+}
+
+.profile-pic {
+  flex: 1;
+  width: 40%;
+  max-height: 400px;
+  align-self: center;
+  margin: auto;
+}
+
+.skills {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.skills-list {
+  display: flex;
+}
+
+.skills ul {
+  padding: 10px 30px 00px 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .About-me {
+    padding-top: 10vh;
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .information{
-        font-size: 17px;
-    }
-    
-    .skills{
-        font-size: 17px;
-    }
+  .information {
+    font-size: 17px;
+  }
+
+  .skills {
+    font-size: 17px;
+  }
 }
 
-@media screen and (max-width: 750px){
-    .about-me-grid{
-        flex-direction: column-reverse;
-        padding-bottom: 0;
-    }
+@media screen and (max-width: 850px) {
+  .about-me-grid {
+    width: 100vw;
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
+  }
 
-    .About-me .profile-pic{
-        width: 50%;
-        padding-bottom: 30px;
-    }
+  .About-me .profile-pic {
+    width: 50%;
+    max-height: 100%;
+    padding-bottom: 30px;
+  }
 }
 
-@media screen and (max-width: 550px){
-    .About-me .profile-pic{
-        width: 70%;
-    }
+@media screen and (max-width: 550px) {
+  .About-me .profile-pic {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width: 500px){
-    .About-me{
-        padding-bottom: 0;
-    }
+@media screen and (max-width: 500px) {
+  .About-me {
+    padding-bottom: 0;
+  }
 
-    .about-me-grid{
-        width: 100%;
-        border: none;
-        border-radius: 0;
-        background: linear-gradient(transparent, #212121 50%);
-        padding: 10px;
-    }
+  .about-me-grid {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(transparent, #212121 50%);
+    padding: 10px;
+  }
 
-    .information{
-        font-size: 14px;
-    }
+  .information {
+    font-size: 14px;
+  }
 
-    .skills{
-        font-size: 14px;
-    }
-
-    
-
+  .skills {
+    font-size: 14px;
+  }
 }

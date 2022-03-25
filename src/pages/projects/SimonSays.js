@@ -22,6 +22,7 @@ export default function SimonSays({checked}) {
                   Creado con HTML, CSS y JavaScript.
 `}
             <br />
+            <br />
             <span className="languages">HTML</span>
             <span className="languages">CSS</span>
             <span className="languages">JavaScript</span>

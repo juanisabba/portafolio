@@ -10,6 +10,11 @@ import Hamburger from "hamburger-react";
 function Header({ checked, setChecked, handleChange, setShowProject }) {
   const [isOpen, setOpen] = useState(false);
 
+const ProjectsClick = () =>{
+  setOpen(false)
+  setShowProject(0)
+}
+
   return (
     <>
       <div className="header">
@@ -70,7 +75,7 @@ function Header({ checked, setChecked, handleChange, setShowProject }) {
                 </a>
               </li>
               <li>
-                <a onClick={() => setOpen(false)} href="/#projects">
+                <a onClick={ProjectsClick} href="/#projects">
                   {!checked ? "PROJECTS" : "PROYECTOS"}
                 </a>
               </li>

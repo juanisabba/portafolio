@@ -1,10 +1,9 @@
 import React from "react";
 import logo from "../images/logo.png";
-import PDF from "../images/juani-sabbatini-english-cv.pdf";
+import PDFSpanish from "../images/juani-sabbatini-cv.pdf";
+import PDFEnglish from "../images/juani-sabbatini-english-cv.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "../styles/home.css";
 
 export default function Home({ checked }) {
@@ -14,10 +13,15 @@ export default function Home({ checked }) {
       <div className="name">
         <h1>{!checked ? `HI, I'M ${name}` : `HOLA, SOY ${name}`}</h1>
         <p>
-          Fullstack developer in Javascript with a great passion for coding.
+          {!checked
+            ? "Web developer in Javascript with a great passion for coding."
+            : "Desarrolador web con una gran pasión por la programación"}
         </p>
-        <a href={PDF} download={PDF}>
-          <button type="button">See my CV</button>
+        <a
+          href={!checked ? PDFEnglish : PDFSpanish}
+          download={!checked ? PDFEnglish : PDFSpanish}
+        >
+          <button type="button">{!checked ? "See my CV" : "Mira mi CV"}</button>
         </a>
       </div>
       <img src={logo} className="developer" alt="Developer" />

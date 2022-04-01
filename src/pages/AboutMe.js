@@ -31,12 +31,12 @@ export default function AboutMe({checked, setShowProject}) {
                   <li>HTML5</li>
                   <li>CSS3</li>
                   <li>SASS</li>
-                  <li>Bootstrap</li>
+                  <li>Git / GitHub</li>
                 </ul>
                 <ul>
                   <li>JavaScript</li>
                   <li>React JS</li>
-                  <li>Git / GitHub</li>
+                  <li>TypeScript</li>
                 </ul>
                 <ul>
                   <li>Node JS</li>

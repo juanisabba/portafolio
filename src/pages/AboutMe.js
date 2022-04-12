@@ -37,6 +37,7 @@ export default function AboutMe({checked, setShowProject}) {
                   <li>JavaScript</li>
                   <li>React JS</li>
                   <li>TypeScript</li>
+                  <li>Redux</li>
                 </ul>
                 <ul>
                   <li>Node JS</li>
